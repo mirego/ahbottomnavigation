@@ -3,11 +3,13 @@
 buildscript {
     repositories {
         jcenter()
+        maven { url 'https://s3.amazonaws.com/mirego-maven/public' }
+        google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'digital.wup:android-maven-publish:3.3.0'
+        classpath 'mirego:publish-plugin:1.0'
     }
 }
 
@@ -17,6 +19,7 @@ allprojects {
         maven {
             url "https://maven.google.com"
         }
+        google()
     }
 }
 
