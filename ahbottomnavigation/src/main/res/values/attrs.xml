@@ -10,5 +10,6 @@
         <attr name="disableColor" format="color" />
         <attr name="coloredActive" format="color" />
         <attr name="coloredInactive" format="color" />
+        <attr name="tintIcon" format="boolean" />
     </declare-styleable>
 </resources>
